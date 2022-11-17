@@ -13,9 +13,23 @@
     <script>
 
 
-       
+        function tipCalculator(totalAmout, tip=10){
 
+            var tip= tip/100;
+            var tipAmount = tip * totalAmout;
+            var totalAmout = totalAmout + tipAmount;;
+            
+            console.log("Total amount "+totalAmout+" tip amount "+tip);
+            return totalAmout;
+        }
     
+
+        var totalAmout = 25;
+
+        var amount = tipCalculator(totalAmout);
+
+
+
     </script>
 
     
